@@ -48,6 +48,7 @@ I set up OWASP Juice Shop on your local machine using Docker:
 
 ## Tasks
 
+Following are the tasks and steps that I have performed to complete this Hands-On Project.
 ### Task 1: Identify Open Ports
 Step1: Open a terminal in Kali Linux machine.
 Step2: Scan for open ports on the machine running OWASP Juice Shop. Replace ``192.168.x.1xx`` with the IP address of your OWASP Juice Shop instance ( If you also want to perform the operations).
