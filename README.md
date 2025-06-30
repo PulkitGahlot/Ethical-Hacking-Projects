@@ -34,8 +34,8 @@ Deploy and monitor a honeypot using Cowrie. This project covers setting up Cowri
 
 1. **Clone the Repository:**
     ```bash
-    git clone https://github.com/yourusername/ethical-hacking-projects-for-beginners.git
-    cd ethical-hacking-projects-for-beginners
+    git clone [https://github.com/yourusername/ethical-hacking-projects-for-beginners.git
+    cd ethical-hacking-projects-for-beginners](https://github.com/PulkitGahlot/Ethical-Hacking-Projects.git)
     ```
 
 2. **Navigate to Each Project Directory:**
@@ -49,18 +49,17 @@ Deploy and monitor a honeypot using Cowrie. This project covers setting up Cowri
 
 ## About Me
 
-Hi, I'm Rajneesh Gupta, security consultant, coach, and two-times best-selling author. I share security projects to help people excel in the security domain.
+Hi, I'm Pulkit Gahlot, a cyber security enthusiast and passionate to be an ethical hacker. I have completed these projects in my learning journey.
 
 ## Connect with Me
 
-- **LinkedIn**: [Rajneesh Gupta](https://www.linkedin.com/in/rajneeshcyber)
-- **Twitter**: [@rajneeshcyber](https://twitter.com/rajneeshcyber)
-- **YouTube Channel**: [Rajneesh Gupta](https://www.youtube.com/channel/rajneeshcyber)
+- **LinkedIn**: [Pulkit Gahlot](https://www.linkedin.com/in/pulkit-gahlot)
+- **Twitter**: [@rajneeshcyber](https://twitter.com/rajneeshcyber)](https://x.com/Pulkit_Gahlot_)
 
 Feel free to connect with me on any of these platforms!
 
 ## Professional Services
 
-For professional services and consultations, please visit my company website at [Hax Security](https://www.haxsecurity.com).
+I am open to work in the field of cyber security, red teaming and ethical hacking profiles. Also I am available to work in Computer Networking Profiles, AI and ML Profiles too.
 
 Thank you for visiting my GitHub page!
