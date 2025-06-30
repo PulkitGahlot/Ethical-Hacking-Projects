@@ -41,9 +41,9 @@ I set up OWASP Juice Shop on your local machine using Docker:
    sudo docker pull bkimminich/juice-shop
    ```
 3. Run the OWASP Juice Shop container:
-  ```
-  sudo docker run -d -p 3000:3000 bkimminich/juice-shop
-  ```
+   ```
+   sudo docker run -d -p 3000:3000 bkimminich/juice-shop
+   ```
 4. Access the OWASP Juice Shop web application by navigating to http://localhost:3000 in your web browser.
 
 ## Tasks
