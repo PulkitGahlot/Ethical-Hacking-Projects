@@ -35,7 +35,7 @@ Deploy and monitor a honeypot using Cowrie. This project covers setting up Cowri
 1. **Clone the Repository:**
     ```bash
     git clone https://github.com/PulkitGahlot/Ethical-Hacking-Projects.git
-    cd ethical-hacking-projects-for-beginners
+    cd Ethical-Hacking-Projects
     ```
 
 2. **Navigate to Each Project Directory:**
