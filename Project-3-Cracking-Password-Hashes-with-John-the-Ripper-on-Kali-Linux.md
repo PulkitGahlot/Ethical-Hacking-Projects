@@ -31,7 +31,7 @@ sudo apt-get update && sudo apt-get install john
 
 ## Tasks
 
-Following are the steps that I have performed to complete this Hands-On Project.
+Following are the tasks and steps that I have performed to complete this Hands-On Project.
 ### Task 1: Basic Password Cracking
 
 Step1: Create a text file named passwords.txt containing a list of password hashes. For example:
