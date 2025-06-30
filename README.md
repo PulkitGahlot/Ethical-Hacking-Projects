@@ -1,8 +1,8 @@
-# Ethical Hacking Projects for Beginners
+# Ethical Hacking Projects
 
 ## Overview
 
-This repository contains seven beginner-level projects focused on ethical hacking and cybersecurity. Each project provides hands-on experience with essential techniques for network scanning, web application testing, password cracking, honeypot deployment, Wi-Fi auditing, phishing attack simulation, and SQL injection exploitation.
+This repository contains four projects focused on ethical hacking and cybersecurity. Each project provides hands-on experience with essential techniques for network scanning, password cracking, and honeypot deployment.
 
 ## Projects
 
@@ -29,24 +29,6 @@ Deploy and monitor a honeypot using Cowrie. This project covers setting up Cowri
 
 - **Key Topics:** Honeypot Deployment, Intrusion Monitoring, Cowrie
 - **Tools:** Kali Linux, Cowrie, Docker, Splunk
-
-### 5. [Auditing and Attacking a Wi-Fi Network with Aircrack-ng](https://github.com/0xrajneesh/Ethical-Hacking-Projects-for-beginners/blob/main/Project-5-Auditing-and-Attacking-a-Wi-Fi-Network-with-Aircrack-ng.md)
-Learn how to audit and attack Wi-Fi networks using Aircrack-ng. This project covers setting up a Wi-Fi adapter in monitor mode, capturing handshake packets, and cracking Wi-Fi passwords.
-
-- **Key Topics:** Wi-Fi Auditing, Packet Capture, Password Cracking
-- **Tools:** Kali Linux, Aircrack-ng, Wi-Fi Adapter
-
-### 6. [Creating and Defending Against Phishing Attacks](https://github.com/0xrajneesh/Ethical-Hacking-Projects-for-beginners/blob/main/Project-6-Building-Phishing-Simulation-on-kali-linux.md)
-Simulate phishing attacks and learn how to defend against them. This project covers crafting phishing emails, launching phishing campaigns, and implementing anti-phishing measures.
-
-- **Key Topics:** Phishing Simulation, Social Engineering, Defense Strategies
-- **Tools:** Kali Linux, Gophish
-
-### 7. [Exploiting and Securing a Database using SQL Injection on DVWA](https://github.com/0xrajneesh/Ethical-Hacking-Projects-for-beginners/blob/main/Project-7-Exploiting-and-Securing-a-Database-using-SQL-Injection-on-DVWA.md)
-Identify and exploit SQL injection vulnerabilities using DVWA. This project covers SQL injection techniques, using SQLMap for automated exploitation, and securing databases.
-
-- **Key Topics:** SQL Injection, Database Security, DVWA
-- **Tools:** Kali Linux, DVWA, SQLMap
 
 ## Getting Started
 
