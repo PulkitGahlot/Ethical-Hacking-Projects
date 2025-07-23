@@ -47,49 +47,49 @@ Here is a simple network diagram for this lab setup:
 
 Following are the tasks and steps I performed in order to complete this Hand-On Project.
 ### Task 1: Verify Honeypot Deployment
-Step1: Open a terminal in Kali Linux machine.
-Step2: Check if the Cowrie container is running:
-  ```
+Step 1: Open a terminal in Kali Linux machine.
+Step 2: Check if the Cowrie container is running:
+  ```sh
   sudo docker ps
   ```
 Output: The Cowrie container should be listed as running.
 
 ### Task 2: Simulate an Attack
-Step1: From Kali Linux machine, attempt to connect to the honeypot using SSH:
-  ```
+Step 1: From Kali Linux machine, attempt to connect to the honeypot using SSH:
+  ```sh
   ssh root@localhost -p 2222
   ```
-Step2: Enter any password when prompted.
+Step 2: Enter any password when prompted.
 Output: The honeypot should log the attempt and display a fake shell environment.
 
 ### Task 3: Monitor Honeypot Logs
-Step1: Access the logs of the Cowrie container:
+Step 1: Access the logs of the Cowrie container:
   ```sh
   sudo docker logs cowrie
   ```
 Output: The logs should show details of the SSH connection attempt, including the username, password, and commands entered.
 
 ### Task 4: Analyze Captured Data
-Step1: Open another terminal in Kali Linux machine.
-Step2: Access the Cowrie logs directory within the container:
+Step 1: Open another terminal in Kali Linux machine.
+Step 2: Access the Cowrie logs directory within the container:
   ```sh
   sudo docker exec -it cowrie /bin/bash
   cd /srv/cowrie/var/log/cowrie
   ```
-Step3: Analyze the cowrie.json file for detailed logs of captured sessions:
+Step 3: Analyze the cowrie.json file for detailed logs of captured sessions:
   ```sh
   cat cowrie.json | jq '.'
   ```
 Output: Detailed JSON log entries of the captured sessions, including connection attempts and command execution.
 
 ### Task 5: Forwarding Logs to a Splunk SIEM
-Step1: Set up Splunk on network (refered to the Splunk documentation for installation steps).
-Step2: Configure Cowrie to forward logs to Splunk by editing the cowrie.cfg configuration file
+Step 1: Set up Splunk on network (refered to the Splunk documentation for installation steps).
+Step 2: Configure Cowrie to forward logs to Splunk by editing the cowrie.cfg configuration file
   ```
   sudo docker exec -it cowrie /bin/bash
   nano /srv/cowrie/cowrie.cfg
   ```
-Step3: Add the following configuration to forward logs to your Splunk instance:
+Step 3: Add the following configuration to forward logs to your Splunk instance:
   ```
   [output_splunk]
   enabled = true
@@ -97,28 +97,28 @@ Step3: Add the following configuration to forward logs to your Splunk instance:
   http_event_collector = https://<SPLUNK_IP>:8088/services/collector/event
   sourcetype = cowrie
   ```
-Step4: Save the file and restart the Cowrie container to apply the changes:
+Step 4: Save the file and restart the Cowrie container to apply the changes:
   ```
   sudo docker restart cowrie
   ```
 Output: Cowrie logs should now be forwarded to your Splunk instance.
 
 ### Task 6: Creating Custom Alerts in Splunk
-Step1: Open the Splunk web interface and log in.
-Step2: Navigate to Search & Reporting and search for Cowrie logs using the following query:
+Step 1: Open the Splunk web interface and log in.
+Step 2: Navigate to Search & Reporting and search for Cowrie logs using the following query:
 ```spl
 sourcetype="cowrie"
 ```
-Step3: Set up custom alerts based on specific events captured by Cowrie (e.g., repeated login attempts):
+Step 3: Set up custom alerts based on specific events captured by Cowrie (e.g., repeated login attempts):
   - Click on Save As > Alert.
   - Define alert conditions (e.g., more than 5 failed login attempts within 10 minutes).
   - Configure alert actions (e.g., send an email or trigger a webhook).
 Output: Splunk should generate alerts based on the defined conditions, providing real-time notifications of suspicious activities.
 
 ### Task 7: Visualizing Honeypot Data in Splunk
-Step1: Use Splunk's data visualization tools to create dashboards that visualize the data collected by Cowrie.
-Step2: Navigate to Dashboards and create a new dashboard.
-Step3: Add visualizations (e.g., charts, tables) to display attack patterns and trends over time:
+Step 1: Use Splunk's data visualization tools to create dashboards that visualize the data collected by Cowrie.
+Step 2: Navigate to Dashboards and create a new dashboard.
+Step 3: Add visualizations (e.g., charts, tables) to display attack patterns and trends over time:
   - Example visualizations: Number of login attempts, top source IPs, common commands executed.
 Output: Visualized data showing attack patterns, frequencies, and other relevant metrics, aiding in security research and analysis.
 
